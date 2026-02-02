@@ -151,49 +151,49 @@
           <div class="partner-category">
             <h3>Forschung & Bildung</h3>
             <div class="partner-list">
-              <div class="partner-item">
-                <img src="/partners/fh-ooe.svg" alt="FH Oberösterreich, Campus Hagenberg" class="partner-logo-img">
+              <a href="https://www.fh-ooe.at/campus-hagenberg" target="_blank" rel="noopener noreferrer" class="partner-item" aria-label="FH Oberösterreich, Campus Hagenberg – Website öffnen">
+                <img src="/partners/fh-ooe.png" alt="FH Oberösterreich, Campus Hagenberg" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">FH Oberösterreich, Campus Hagenberg</div>
                   <div class="partner-role">(Projektleitung)</div>
                 </div>
-              </div>
-              <div class="partner-item">
+              </a>
+              <a href="https://www.risc-software.at" target="_blank" rel="noopener noreferrer" class="partner-item" aria-label="RISC Software GmbH – Website öffnen">
                 <img src="/partners/risc.svg" alt="RISC Software GmbH" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">RISC Software GmbH</div>
                 </div>
-              </div>
-              <div class="partner-item">
-                <img src="/partners/scch.svg" alt="Software Competence Center Hagenberg (SCCH)" class="partner-logo-img">
+              </a>
+              <a href="https://www.scch.at" target="_blank" rel="noopener noreferrer" class="partner-item" aria-label="Software Competence Center Hagenberg (SCCH) – Website öffnen">
+                <img src="/partners/scch.png" alt="Software Competence Center Hagenberg (SCCH)" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">Software Competence Center Hagenberg (SCCH)</div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
           
           <div class="partner-category">
             <h3>Unternehmen</h3>
             <div class="partner-list">
-              <div class="partner-item">
+              <a href="https://www.bluesource.at" target="_blank" rel="noopener noreferrer" class="partner-item" aria-label="bluesource – mobile solutions gmbh – Website öffnen">
                 <img src="/partners/bluesource.svg" alt="bluesource – mobile solutions gmbh" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">bluesource – mobile solutions gmbh</div>
                 </div>
-              </div>
-              <div class="partner-item">
+              </a>
+              <a href="https://www.porscheinformatik.com" target="_blank" rel="noopener noreferrer" class="partner-item" aria-label="Porsche Informatik GmbH – Website öffnen">
                 <img src="/partners/porsche-informatik.svg" alt="Porsche Informatik GmbH" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">Porsche Informatik GmbH</div>
                 </div>
-              </div>
-              <div class="partner-item">
-                <img src="/partners/rise2reality.svg" alt="Rise2Reality e.U." class="partner-logo-img">
+              </a>
+              <a href="https://www.rise2reality.com" target="_blank" rel="noopener noreferrer" class="partner-item partner-item-logo-dark" aria-label="Rise2Reality e.U. – Website öffnen">
+                <img src="/partners/rise2reality.png" alt="Rise2Reality e.U." class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">Rise2Reality e.U.</div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -956,12 +956,30 @@ export default {
   min-height: 120px;
 }
 
+a.partner-item {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  border: 2px solid transparent;
+}
+
+a.partner-item:hover {
+  box-shadow: 0 4px 12px rgba(102, 45, 145, 0.2);
+  border-color: var(--kiwi-purple);
+}
+
 .partner-logo-img {
   width: 60px;
   height: 60px;
   object-fit: contain;
   flex-shrink: 0;
   border-radius: 0.5rem;
+}
+
+.partner-item-logo-dark .partner-logo-img {
+  background: var(--kiwi-dark);
+  padding: 0.35rem;
 }
 
 .partner-info {

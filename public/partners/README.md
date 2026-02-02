@@ -1,12 +1,14 @@
 # Partner logos
 
-Placeholder logos (initials) are used for consortium partners. Replace with official logos when obtained from:
+Official consortium partner logos. Sources and formats:
 
-- **FH Oberösterreich, Campus Hagenberg** – fh-ooe.at (press/branding)
-- **RISC Software GmbH** – risc-software.at
-- **Software Competence Center Hagenberg (SCCH)** – scch.at
-- **bluesource – mobile solutions gmbh** – bluesource.at
-- **Porsche Informatik GmbH** – porsche-informatik.at
-- **Rise2Reality e.U.** – rise2reality.at
+| Partner | File | Source |
+|--------|------|--------|
+| **FH Oberösterreich, Campus Hagenberg** | `fh-ooe.png` | fh-ooe.at (logo-de.png) |
+| **RISC Software GmbH** | `risc.svg` | risc-software.at (Downloads → Logo zip) |
+| **Software Competence Center Hagenberg (SCCH)** | `scch.png` | scch.at (homepage title image) |
+| **bluesource – mobile solutions gmbh** | `bluesource.svg` | bluesource.at (logo-dark.svg) |
+| **Porsche Informatik GmbH** | `porsche-informatik.svg` | porscheinformatik.com (logo SVG; fill adjusted for light background) |
+| **Rise2Reality e.U.** | `rise2reality.png` | rise2reality.com (logo-square-white; displayed on dark background) |
 
-Keep filenames (e.g. `fh-ooe.svg`, `risc.svg`) or update `src/App.vue` partner `<img src="...">` paths accordingly.
+If you replace any file, keep the same filename or update `src/App.vue` partner `<img src="...">` paths accordingly.
