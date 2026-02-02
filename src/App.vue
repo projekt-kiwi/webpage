@@ -14,6 +14,7 @@
               <a href="#modules" class="nav-link">Module</a>
               <a href="#partners" class="nav-link">Partner</a>
               <a href="#contact" class="nav-link">Kontakt</a>
+              <a href="#kooperationszuschuesse" class="nav-link nav-link-cta">Kooperationszuschüsse</a>
             </div>
           </div>
         </div>
@@ -151,20 +152,20 @@
             <h3>Forschung & Bildung</h3>
             <div class="partner-list">
               <div class="partner-item">
-                <div class="partner-logo">FH</div>
+                <img src="/partners/fh-ooe.svg" alt="FH Oberösterreich, Campus Hagenberg" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">FH Oberösterreich, Campus Hagenberg</div>
                   <div class="partner-role">(Projektleitung)</div>
                 </div>
               </div>
               <div class="partner-item">
-                <div class="partner-logo">RISC</div>
+                <img src="/partners/risc.svg" alt="RISC Software GmbH" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">RISC Software GmbH</div>
                 </div>
               </div>
               <div class="partner-item">
-                <div class="partner-logo">SCCH</div>
+                <img src="/partners/scch.svg" alt="Software Competence Center Hagenberg (SCCH)" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">Software Competence Center Hagenberg (SCCH)</div>
                 </div>
@@ -176,19 +177,19 @@
             <h3>Unternehmen</h3>
             <div class="partner-list">
               <div class="partner-item">
-                <div class="partner-logo">BS</div>
+                <img src="/partners/bluesource.svg" alt="bluesource – mobile solutions gmbh" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">bluesource – mobile solutions gmbh</div>
                 </div>
               </div>
               <div class="partner-item">
-                <div class="partner-logo">PI</div>
+                <img src="/partners/porsche-informatik.svg" alt="Porsche Informatik GmbH" class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">Porsche Informatik GmbH</div>
                 </div>
               </div>
               <div class="partner-item">
-                <div class="partner-logo">R2R</div>
+                <img src="/partners/rise2reality.svg" alt="Rise2Reality e.U." class="partner-logo-img">
                 <div class="partner-info">
                   <div class="partner-name">Rise2Reality e.U.</div>
                 </div>
@@ -336,20 +337,23 @@
           <div class="funding-grid grid grid-2">
             <div class="funding-card card">
               <h3>FFG-Förderung</h3>
+              <a href="https://www.ffg.at" target="_blank" rel="noopener noreferrer" class="ffg-logo-link" aria-label="FFG – Österreichische Forschungsförderungsgesellschaft">
+                <img src="/logos/ffg/FFG_Logo_DE_RGB_1000px.png" alt="FFG – Österreichische Forschungsförderungsgesellschaft" class="ffg-logo">
+              </a>
               <p>
-                Gefördert durch die <strong>FFG</strong> im Rahmen der Ausschreibung 
-                <em>Talente Regional 2024</em> mit einer Förderquote von 100% der 
-                anerkannten Projektkosten.
+                Dieses Projekt wird aus Mitteln der FFG gefördert (<a href="https://www.ffg.at" target="_blank" rel="noopener noreferrer">www.ffg.at</a>). 
+                Die FFG ist die zentrale nationale Förderorganisation und stärkt Österreichs Innovationskraft.
+                Gefördert im Rahmen der Ausschreibung <em>Talente Regional 2024</em> mit einer Förderquote von 100% der anerkannten Projektkosten.
               </p>
             </div>
-            <div class="funding-card card funding-card-highlight">
+            <div id="kooperationszuschuesse" class="funding-card card funding-card-highlight funding-card-clickable" role="button" tabindex="0" @click="showKooperationsModal = true" @keydown.enter="showKooperationsModal = true" @keydown.space.prevent="showKooperationsModal = true">
               <h3>Kooperationszuschüsse</h3>
               <p>
                 KIWi stellt <strong>10 Zuschüsse à €1.000</strong> für weitere Schulen bereit. 
                 Diese können für Projekthardware, KI-Tool-Lizenzen, Exkursionen oder 
                 Expert*innen-Vorträge genutzt werden.
               </p>
-              <a href="#contact" class="btn btn-secondary">Jetzt bewerben</a>
+              <span class="btn btn-secondary">Mehr erfahren & bewerben</span>
             </div>
           </div>
         </div>
@@ -400,6 +404,13 @@
             <p>FFG – Österreichische Forschungsförderungsgesellschaft</p>
           </div>
         </div>
+
+        <div class="project-info-link">
+          <a href="https://projekte.ffg.at/projekt/5135929/pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            Projektbeschreibung (FFG) – PDF
+          </a>
+          <p class="project-info-hint">Weitere Projektinformationen in der FFG-Projektdatenbank</p>
+        </div>
       </div>
     </section>
 
@@ -432,8 +443,9 @@
           <div class="funding-notice card">
             <h3>Förderhinweis</h3>
             <p>
-              Dieses Projekt wird im Rahmen der FFG-Ausschreibung 
-              <em>Talente Regional 2024</em> aus Mitteln der Republik Österreich gefördert.
+              Dieses Projekt wird aus Mitteln der FFG gefördert (<a href="https://www.ffg.at" target="_blank" rel="noopener noreferrer">www.ffg.at</a>). 
+              Die FFG ist die zentrale nationale Förderorganisation und stärkt Österreichs Innovationskraft.
+              Förderprogramm: <em>Talente Regional 2024</em>.
             </p>
           </div>
         </div>
@@ -460,11 +472,68 @@
           </div>
           <div class="footer-info">
             <p>&copy; 2025 KIWi – KI & Wissenschaft. Alle Rechte vorbehalten.</p>
-            <p>Gefördert durch die FFG im Rahmen von Talente Regional 2024.</p>
+            <p>
+              Dieses Projekt wird aus Mitteln der FFG gefördert (<a href="https://www.ffg.at" target="_blank" rel="noopener noreferrer">www.ffg.at</a>). 
+              Die FFG ist die zentrale nationale Förderorganisation und stärkt Österreichs Innovationskraft.
+            </p>
+            <a href="https://www.ffg.at" target="_blank" rel="noopener noreferrer" class="footer-ffg-logo-link" aria-label="FFG – Österreichische Forschungsförderungsgesellschaft">
+              <img src="/logos/ffg/FFG_Logo_DE_RGB_1000px.png" alt="FFG – Österreichische Forschungsförderungsgesellschaft" class="footer-ffg-logo">
+            </a>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Kooperationszuschuss Modal -->
+    <div v-show="showKooperationsModal" class="modal-overlay" @click.self="showKooperationsModal = false" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+      <div class="modal kooperations-modal">
+        <button type="button" class="modal-close" aria-label="Schließen" @click="showKooperationsModal = false">&times;</button>
+        <h2 id="modal-title" class="modal-title">Kooperationszuschüsse – Informationen & Bewerbung</h2>
+        <div class="modal-body">
+          <p class="modal-intro">
+            KIWi vergibt <strong>10 Kooperationszuschüsse à €1.000</strong> an Schulen, die am Projekt teilnehmen möchten. 
+            Die Zuschüsse können für Projekthardware, KI-Tool-Lizenzen, Exkursionen oder Expert*innen-Vorträge verwendet werden.
+          </p>
+          <section class="modal-docs">
+            <h3>Unterlagen zum Download</h3>
+            <div class="doc-cards">
+              <a href="https://www.ffg.at/sites/default/files/2025-06/KIWi_Projektkurzbeschreibung_bf.pdf" target="_blank" rel="noopener noreferrer" class="doc-card">
+                <span class="doc-card-badge">PDF</span>
+                <span class="doc-card-title">Projektkurzbeschreibung KIWi</span>
+                <span class="doc-card-desc">Kurze Übersicht über das KIWi-Projekt und die Kooperationszuschüsse.</span>
+              </a>
+              <a href="https://www.ffg.at/sites/default/files/2025-06/Infoblatt_Kooperationszuschuss_Lehrende_2025.pdf" target="_blank" rel="noopener noreferrer" class="doc-card">
+                <span class="doc-card-badge">PDF</span>
+                <span class="doc-card-title">Infoblatt für Pädagog*innen</span>
+                <span class="doc-card-desc">Informationen zum Kooperationszuschuss speziell für Lehrkräfte.</span>
+              </a>
+              <a href="https://www.ffg.at/sites/default/files/2025-09/Antragsformular_Kooperationszuschuss_Talente_regional_bf.docx" target="_blank" rel="noopener noreferrer" class="doc-card">
+                <span class="doc-card-badge">Word</span>
+                <span class="doc-card-title">Antragsformular</span>
+                <span class="doc-card-desc">Vorlage für Ihren Antrag – ausfüllen und per E-Mail an die Projektleitung senden.</span>
+              </a>
+              <a href="https://www.ffg.at/sites/default/files/2025-09/Abschlussbericht_Kooperationszuschuss_Talente_regional_bf.docx" target="_blank" rel="noopener noreferrer" class="doc-card">
+                <span class="doc-card-badge">Word</span>
+                <span class="doc-card-title">Abschlussbericht</span>
+                <span class="doc-card-desc">Vorlage für den Abschlussbericht nach Ende der Kooperation.</span>
+              </a>
+            </div>
+          </section>
+          <section class="modal-apply">
+            <h3>So bewerben Sie sich</h3>
+            <p>
+              Füllen Sie das <strong>Antragsformular</strong> (siehe oben) aus. Ihren ausgefüllten Antrag senden Sie per E-Mail an die <strong>Projektleitung</strong>:
+            </p>
+            <p class="modal-apply-recipient">
+              <strong>Samuel Zühlke</strong><br>
+              <span class="modal-apply-email">samuel.zuehlke@fh-hagenberg.at</span>
+            </p>
+            <p class="modal-apply-note">Der Klick auf den Button öffnet Ihr E-Mail-Programm mit dieser Adresse und dem Betreff „KIWi Kooperationszuschuss – Antrag“.</p>
+            <a href="mailto:samuel.zuehlke@fh-hagenberg.at?subject=KIWi%20Kooperationszuschuss%20–%20Antrag" class="btn btn-primary modal-cta">E-Mail an Projektleitung (Samuel Zühlke) senden</a>
+          </section>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -476,6 +545,7 @@ export default {
       activeTab: 0,
       headerColor: this.getRandomHeaderColor(),
       showBackToTop: false,
+      showKooperationsModal: false,
       schoolLevels: [
         {
           name: 'Volksschule',
@@ -545,6 +615,11 @@ export default {
       ]
     }
   },
+  watch: {
+    showKooperationsModal(isOpen) {
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+  },
   methods: {
     getRandomHeaderColor() {
       const colors = ['var(--kiwi-purple)', 'var(--kiwi-orange)', 'var(--kiwi-green)'];
@@ -558,13 +633,21 @@ export default {
     },
     handleScroll() {
       this.showBackToTop = window.scrollY > 300;
+    },
+    handleModalKeydown(e) {
+      if (e.key === 'Escape' && this.showKooperationsModal) {
+        this.showKooperationsModal = false;
+      }
     }
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('keydown', this.handleModalKeydown);
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('keydown', this.handleModalKeydown);
+    document.body.style.overflow = '';
   }
 }
 </script>
@@ -603,6 +686,7 @@ export default {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -611,10 +695,27 @@ export default {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-link:hover {
   color: var(--kiwi-purple);
+}
+
+.nav-link-cta {
+  background: var(--kiwi-purple);
+  color: var(--kiwi-white);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.25;
+}
+
+.nav-link-cta:hover {
+  background: var(--kiwi-orange);
+  color: var(--kiwi-white);
 }
 
 /* Hero Styles */
@@ -713,6 +814,21 @@ export default {
 .detail-item h4 {
   color: var(--kiwi-purple);
   margin-bottom: 0.5rem;
+}
+
+.project-info-link {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.project-info-link .btn {
+  display: inline-block;
+}
+
+.project-info-hint {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--kiwi-gray-600);
 }
 
 /* Goals Styles */
@@ -840,18 +956,12 @@ export default {
   min-height: 120px;
 }
 
-.partner-logo {
-  font-size: 1rem;
-  font-weight: 700;
+.partner-logo-img {
   width: 60px;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--kiwi-gray-100);
-  border-radius: 0.5rem;
+  object-fit: contain;
   flex-shrink: 0;
-  color: var(--kiwi-purple);
+  border-radius: 0.5rem;
 }
 
 .partner-info {
@@ -1046,6 +1156,203 @@ export default {
   color: var(--kiwi-white);
 }
 
+.funding-card-clickable {
+  cursor: pointer;
+}
+
+.funding-card-clickable .btn {
+  pointer-events: none;
+}
+
+/* Kooperationszuschuss Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.modal {
+  background: var(--kiwi-white);
+  border-radius: 1rem;
+  width: 100%;
+  max-width: none;
+  max-height: calc(100vh - 2rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background: var(--kiwi-gray-100);
+  color: var(--kiwi-dark);
+  font-size: 1.5rem;
+  line-height: 1;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.modal-close:hover {
+  background: var(--kiwi-gray-200);
+}
+
+.modal-title {
+  padding: 1.5rem 1.5rem 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--kiwi-purple);
+}
+
+.modal-body {
+  padding: 1rem 1.5rem 1.5rem;
+  overflow-y: auto;
+}
+
+.modal-intro {
+  margin-bottom: 1.5rem;
+  color: var(--kiwi-gray-800);
+}
+
+.modal-docs {
+  margin-bottom: 1.5rem;
+}
+
+.modal-docs h3,
+.modal-apply h3 {
+  font-size: 1.125rem;
+  color: var(--kiwi-purple);
+  margin-bottom: 0.75rem;
+}
+
+.doc-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.doc-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: var(--kiwi-gray-50);
+  border: 1px solid var(--kiwi-gray-200);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.doc-card:hover {
+  border-color: var(--kiwi-purple);
+  box-shadow: 0 4px 12px rgba(102, 45, 145, 0.15);
+}
+
+.doc-card-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--kiwi-purple);
+  background: rgba(102, 45, 145, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.doc-card-title {
+  font-weight: 600;
+  color: var(--kiwi-purple);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.doc-card-desc {
+  font-size: 0.875rem;
+  color: var(--kiwi-gray-600);
+  line-height: 1.4;
+  margin-top: auto;
+}
+
+.modal-apply {
+  background: var(--kiwi-gray-50);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.modal-apply p {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.modal-apply p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.modal-apply-recipient {
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  background: var(--kiwi-white);
+  border-radius: 0.375rem;
+  border: 1px solid var(--kiwi-gray-200);
+}
+
+.modal-apply-email {
+  font-size: 0.9375rem;
+  color: var(--kiwi-purple);
+}
+
+.modal-apply-note {
+  font-size: 0.875rem;
+  color: var(--kiwi-gray-600);
+  font-style: italic;
+}
+
+.modal-cta {
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 900px) {
+  .doc-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .doc-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ffg-logo-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.ffg-logo {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
 /* Contact Styles */
 .contact-content {
   display: grid;
@@ -1148,10 +1455,31 @@ export default {
   text-align: right;
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  text-align: right;
+}
+
 .footer-info p {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
   font-size: 0.875rem;
   color: var(--kiwi-gray-300);
+}
+
+.footer-ffg-logo-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.footer-ffg-logo {
+  max-height: 36px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
 }
 
 /* Responsive Design */
