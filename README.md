@@ -4,7 +4,7 @@
 
 ## 🚀 Live Demo
 
-The webpage is deployed on GitHub Pages: [https://kiwi-fhooe.github.io/kiwi-webpage/](https://kiwi-fhooe.github.io/kiwi-webpage/)
+The webpage is deployed on GitHub Pages: [https://projekt-kiwi.github.io/webpage/](https://projekt-kiwi.github.io/webpage/)
 
 ## 🛠️ Development
 
@@ -58,7 +58,7 @@ npm run deploy
 ## 📁 Project Structure
 
 ```
-kiwi-webpage/
+webpage/
 ├── .github/workflows/    # GitHub Actions
 ├── public/              # Static assets
 ├── src/                 # Source code
