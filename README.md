@@ -4,7 +4,9 @@
 
 ## 🚀 Live Demo
 
-The webpage is deployed on GitHub Pages: [https://projekt-kiwi.github.io/webpage/](https://projekt-kiwi.github.io/webpage/)
+The webpage is deployed on GitHub Pages and available at [https://projekt-kiwi.at](https://projekt-kiwi.at).
+
+The KIWi consortium database (separate repo `projekt-kiwi/organisation`) runs at [https://db.projekt-kiwi.at](https://db.projekt-kiwi.at).
 
 ## 🛠️ Development
 
@@ -87,11 +89,13 @@ webpage/
 2. Select "GitHub Actions" as source
 3. The workflow will automatically deploy on push to main
 
-### Custom Domain (Optional)
-To use a custom domain:
-1. Add `CNAME` file to `public/` directory
-2. Configure DNS settings with your domain provider
-3. Update GitHub Pages settings
+### Custom Domain
+The site is served from `projekt-kiwi.at` (DNS at world4you):
+1. `public/CNAME` contains the domain, and `base` in `vite.config.js` is `/`
+2. DNS: four `A` records for the apex (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and a `CNAME` for `www` pointing to `projekt-kiwi.github.io`
+3. Custom domain and "Enforce HTTPS" are set in the GitHub Pages settings
+
+The database app lives in `projekt-kiwi/organisation` on `db.projekt-kiwi.at` (`CNAME` record `db` → `projekt-kiwi.github.io`).
 
 ## 📝 License
 
